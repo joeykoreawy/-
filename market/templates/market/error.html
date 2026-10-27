@@ -1,0 +1,1 @@
+{% extends 'market/base.html' %}{% block content %}<main class="pagewrap narrow"><div class="paper"><div class="kicker">잠시 확인해 주세요</div><h1>요청을 처리할 수 없습니다</h1><p class="subtitle">{{ error }}</p><a class="btn outline" href="{% url 'home' %}">의뢰 게시판으로</a>{% if user.is_authenticated %}<a class="btn" href="{% url 'mine' %}">내 활동</a>{% endif %}</div></main>{% endblock %}
