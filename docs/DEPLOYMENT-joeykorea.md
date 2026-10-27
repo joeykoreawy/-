@@ -22,23 +22,19 @@
 
 ## 1. 무료 계정 생성 완료 — joeykorea
 
-https://www.pythonanywhere.com/ 에서 무료 계정을 선택합니다. 계정 비밀번호와 인증코드는 본인만 보관하세요. 채팅에는 **사용자명만** 알려주면 이후 경로와 설정을 맞춰 안내할 수 있습니다.
+사용자가 `joeykorea` 계정 생성을 완료했습니다. 계정 비밀번호·인증코드를 채팅에 보내지 마세요. 아래는 기본 도메인 기준이며 EU 계정이면 Web 탭의 실제 배정 호스트를 사용합니다.
 
-이 문서는 사용자명 `joeykorea`를 반영했습니다. EU 시스템 계정이라면 대시보드에서 배정받은 실제 호스트를 사용하세요.
+## 2. GitHub에서 소스 가져오기
 
-## 2. 소스 올리기
+사용자 동의를 받아 `joeykoreawy/-` 저장소의 `codex/jakji-site` 브랜치에 소스를 업로드했습니다. 회원 DB·비밀키·가상환경은 제외했습니다. ZIP 다운로드나 긴 설치 코드 복사는 필요하지 않습니다.
 
-제공된 `jakji-joeykorea.zip`을 Files 탭에서 `/home/joeykorea/`에 업로드합니다. 이 파일에는 소스만 있고 비밀키·회원 데이터·DB·가상환경은 없습니다.
-
-Consoles → Bash를 열어 실행합니다:
+PythonAnywhere **Consoles → Bash**에서 실행합니다:
 
 ```bash
-cd /home/joeykorea
-python3 -m zipfile -e jakji-joeykorea.zip .
-cd jakji
+git clone --branch codex/jakji-site https://github.com/joeykoreawy/-.git /home/joeykorea/jakji
 ```
 
-압축은 `jakji/` 디렉터리 아래에 풀립니다. `manage.py`가 `/home/joeykorea/jakji/manage.py`인지 확인합니다. ZIP이 아닌 Git을 이용하는 경우에는 소스를 먼저 사용자 저장소에 반영해야 합니다. 현재 원격 저장소에는 자동으로 push하지 않았습니다.
+기존 `jakji` 디렉터리가 있으면 Git은 덮어쓰지 않고 중단합니다. 임의로 삭제하지 말고 기존 파일 상태를 먼저 확인합니다. 저장소가 비공개라면 PythonAnywhere에서 별도의 GitHub 접근 설정이 필요할 수 있습니다. 로그인 프롬프트나 접근 오류가 나오면 중단하고 오류 종류를 알려 주세요. 채팅으로 비밀번호나 토큰을 보내지 마세요.
 
 ## 3. 설치와 비공개 설정
 

@@ -38,7 +38,7 @@ python3 -m zipfile -e jakji-site.zip .
 cd jakji
 ```
 
-압축은 `jakji/` 디렉터리 아래에 풀립니다. `manage.py`가 `/home/YOUR_USERNAME/jakji/manage.py`인지 확인합니다. ZIP이 아닌 Git을 이용하는 경우에는 소스를 먼저 사용자 저장소에 반영해야 합니다. 현재 원격 저장소에는 자동으로 push하지 않았습니다.
+압축은 `jakji/` 디렉터리 아래에 풀립니다. `manage.py`가 `/home/YOUR_USERNAME/jakji/manage.py`인지 확인합니다. ZIP이 아닌 Git을 이용하는 경우에는 소스를 먼저 사용자 저장소에 반영해야 합니다. 사용자 동의를 받아 소스를 `joeykoreawy/-` 저장소의 `codex/jakji-site` 브랜치에 업로드했습니다. ZIP 없이 가져오는 방법은 `DEPLOYMENT-joeykorea.md`를 참고하세요.
 
 ## 3. 설치와 비공개 설정
 

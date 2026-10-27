@@ -38,6 +38,6 @@
 
 ## 남은 공개 배포 검증
 
-외부 호스팅 계정과 공개 URL이 아직 없습니다. PythonAnywhere 가입·WSGI 설정·실제 도메인의 HTTPS·호스팅 재시작 후 데이터 유지·외부 주소에서의 두 계정 흐름은 **미실행**입니다. 사용자 계정 설정 후 DEPLOYMENT.md의 절차를 따라 이어가야 합니다. 가짜 공개 URL이나 공개 배포 성공을 주장하지 않습니다.
+사용자가 PythonAnywhere `joeykorea` 계정 생성을 확인했고 소스는 동의를 받아 GitHub의 `codex/jakji-site` 브랜치에 업로드했습니다. 실제 공개 앱 URL 연결은 아직 확인하지 않았습니다. PythonAnywhere 내부 설치·WSGI 설정·실제 도메인의 HTTPS·호스팅 재시작 후 데이터 유지·외부 주소에서의 두 계정 흐름은 **미검증**입니다. 사용자 계정 설정 후 DEPLOYMENT.md의 절차를 따라 이어가야 합니다. 가짜 공개 URL이나 공개 배포 성공을 주장하지 않습니다.
 
 Codex 개발환경용 `install_script`와 `start_skill`은 설정 초안에 저장했습니다. 이 저장은 외부 사이트 배포나 환경 게시를 실행하지 않습니다.
